@@ -7,8 +7,7 @@ def clean(c):
 
 
 @task
-def build(c, pythontex=False):
-    c.run("latexmk main.tex", warn=True)
-    if pythontex:
-        c.run("pythontex main.tex")
-        c.run("latexmk main.tex")
+def build(c, python=False):
+    if python:
+        c.run("python metrovalencia4.py")
+    c.run("latexmk main.tex")

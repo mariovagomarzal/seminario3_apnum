@@ -1,3 +1,6 @@
+## Ignore the figures folder
+figures/
+
 ## Custom ignore rules
 *-out.csv
 
