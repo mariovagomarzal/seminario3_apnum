@@ -60,7 +60,8 @@ class MapHandler:
         )
 
         # Evalúa los splines en los valores de t
-        spline_vals = [(x_spline(i), y_spline(i)) for i in t_vals]
+        samples = np.linspace(0, 1, 1000)
+        spline_vals = [(x_spline(i), y_spline(i)) for i in samples]
 
         # Añade la curva paramétrica como una línea azul
         ax.plot(*zip(*spline_vals), c='b')
