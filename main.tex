@@ -9,7 +9,7 @@
 
 % NOTE: Los "frames" que contengan código Python deben tener el
 %       la opción "fragile" para que funcionen correctamente.
-\usepackage[runall, gobble=auto]{pythontex}
+% \usepackage[runall, gobble=auto]{pythontex}
 
 \usepackage{multicol}
 
@@ -18,25 +18,20 @@
 \usepackage{mathtools}
 \usepackage{units}
 
-\usepackage{tikz}
-\usetikzlibrary{babel}
+% \usepackage{tikz}
+% \usetikzlibrary{babel}
 
 \usepackage{pgfplots}
 \pgfplotsset{compat=1.18}
 
 \title{Interpolación segmentaria con \textit{splines}}
-\subtitle{}
+\subtitle{Una aplicación a la parametrización de curvas}
 \author{Francisco González Rubio \and Pedro Pasalodos Guiral%
   \and Mario Vago Marzal}
 \date{Curso 2023--2024}
 \institute{Universitat de València}
 
 \begin{document}
-  % Lista de "imports" (y otros) de PythonTeX.
-  \begin{pythontexcustomcode}[begin]{py}
-    from splinemaps import *
-  \end{pythontexcustomcode}
-
   {
     % A workaround to hide an overfull \vbox warning produced by
     % the title frame of the Metropolis theme.
@@ -50,17 +45,16 @@
   \end{frame}
 
   \section{Diseñando una línea de metro}
-    % \input{slides/metro.tex}
+    \input{slides/metro.tex}
 
   \section{Interpolación segmentaria con \textit{splines}}
     % \input{slides/splines.tex}
 
   \section{Las condiciones de interpolación}
     % \input{slides/condiciones.tex}
-
-    % Las tres condiciones de interpolación.
-
-    % \input{slides/ejemplo.tex}
+    \input{slides/spline_natural.tex}
+    \input{slides/spline_periodico.tex}
+    \input{slides/spline_completo.tex}
 
   \section{Usando \textit{splines} para parametrizar curvas}
     % \input{slides/parametrizacion.tex}
