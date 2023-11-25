@@ -1,0 +1,17 @@
+\begin{frame}{Interpolación segmentaria con \textit{splines}}
+    
+    Sea $[a, b]$ un intervalo, y sea una partición del intervalo
+    \[\Delta = \{a = x_0 < x_1 < \cdots < x_n = b\}\]
+    
+    Definiremos el espacio de \textit{splines} como
+    \[M_2^3 = {S \in C^2([a, b]) : S|_[x_{i-1}, x_ i] = q_ i(x) \in \Pi_3, i = 1,\dots, n}\]
+
+
+    Por lo tanto, un \textit{spline} es una función formada por $n$ trozos polinómicos 
+    de grado tres ue verifican que la función resultante es continua y su primera y su segunda derivada son tambien contínuas.
+    Es decir, se han de cumplir
+
+    \[
+        q_i^{(k)}(x_i) = q_{i+1}^(k)(x_i), \quad k = 0, 1, 2    
+    \]
+\end{frame}
