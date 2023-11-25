@@ -44,7 +44,7 @@ class MapHandler:
         ax.imshow(self.imagen)
 
         # Añade las paradas como puntos rojos
-        ax.scatter(*zip(*self.paradas), c='r', s=10)
+        ax.scatter(*zip(*self.paradas), c='red', s=10)
 
         # Detrmina los splines interpoladores de cada componente
         # y construye la curva paramétrica
@@ -64,10 +64,10 @@ class MapHandler:
         spline_vals = [(x_spline(i), y_spline(i)) for i in samples]
 
         # Añade la curva paramétrica como una línea azul
-        ax.plot(*zip(*spline_vals), c='b')
+        ax.plot(*zip(*spline_vals), c='red')
 
         # Guarda la figura
-        fig.savefig(path, dpi=500)
+        fig.savefig(path, dpi=500, transparent=True, bbox_inches='tight')
 
     def plot_lerp(self, path: str | Path):
         fig, ax = plt.subplots()
@@ -76,10 +76,10 @@ class MapHandler:
         ax.imshow(self.imagen)
 
         # Añade las paradas como puntos rojos
-        ax.scatter(*zip(*self.paradas), c='r', s=10)
+        ax.scatter(*zip(*self.paradas), c='orange', s=10)
 
         # Añade la curva paramétrica como una línea azul
-        ax.plot(*zip(*self.paradas), c='b')
+        ax.plot(*zip(*self.paradas), c='orange')
 
         # Guarda la figura
-        fig.savefig(path, dpi=500)
+        fig.savefig(path, dpi=500, transparent=True, bbox_inches='tight')

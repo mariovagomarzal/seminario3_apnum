@@ -1,0 +1,14 @@
+\begin{frame}{Caracterización de un \textit{spline}}
+  Llamamos $M_i = S''(x_i)$ para $i = 0, \dots, n$. El siguiente resultado
+  caracteriza completamente un \textit{spline} cúbico:
+
+  \begin{exampleblock}{Caracterización de un \textit{spline}}
+    En cada subintervalo $[x_i, x_{i + 1}]$ de la partición $\Delta$, el
+    \textit{spline} interpolador $S(x)$ queda completamente determinado por
+    \begin{itemize}
+      \item los nodos $x_i$ y $x_{i + 1}$,
+      \item los valores $f(x_i)$ y $f(x_{i + 1})$
+      \item y los valores $M_i$ y $M_{i + 1}$.
+    \end{itemize}
+  \end{exampleblock}
+\end{frame}

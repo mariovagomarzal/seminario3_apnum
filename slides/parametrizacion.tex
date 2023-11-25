@@ -1,0 +1,19 @@
+\begin{frame}{Usando \textit{splines} para parametrizar curvas}
+  Hasta ahora solo sabemos como obtener la curva que interpola
+  puntos de \alert{una componente}.
+
+  Si tenemos un conjunto de $n$ puntos en $\mathbb{R}^m$ a interpolar,
+  procederemos así:
+  \begin{enumerate}
+    \item Determinamos una partición uniforme del intervalo $[0, 1]$ en
+    $n - 1$ subintervalos.
+    \item Para cada componente, determinamos un \textit{spline} cúbico
+    $S_i$ que interpole los puntos de la componente en los nodos de la
+    partición.
+    \item La curva $S: [0, 1] \longrightarrow \mathbb{R}^m$ definida por
+    \[
+      S(t) = \left(S_1(t), S_2(t), \ldots, S_m(t)\right)
+    \]
+    es una curva suave que pasa por los $n$ puntos.
+  \end{enumerate}
+\end{frame}
