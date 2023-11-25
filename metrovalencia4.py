@@ -10,6 +10,9 @@ def main():
     map.plot_spline(figures_dir / "metrovalencia4.png")
     map.plot_lerp(figures_dir / "metrovalencia4_lerp.png")
 
+    ejemplo = MapHandler("resources/ejemplo.png")
+    ejemplo.plot_spline(figures_dir / "ejemplo.png")
+
 
 if __name__ == "__main__":
     main()
