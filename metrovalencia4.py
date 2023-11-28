@@ -12,6 +12,7 @@ def main():
 
     ejemplo = MapHandler("resources/ejemplo.png")
     ejemplo.plot_spline(figures_dir / "ejemplo.png")
+    ejemplo.plot_lerp(figures_dir / "ejemplo_lerp.png")
 
 
 if __name__ == "__main__":
