@@ -1,0 +1,21 @@
+\begin{frame}{\textit{Spline} completo}
+    Este es el sistema de ecuaciones asociado al cálculo
+    de un \textit{spline} completo.
+    \[
+    \begin{pmatrix}
+        2 & \lambda_0 & 0 & 0 & \cdots & 0\\
+        \mu_1 & 2 & \lambda_1 & 0 & \cdots & 0\\
+        0 & \mu_2 & 2 & \lambda_2 & \cdots & 0\\
+        \vdots & \ddots& \ddots & \ddots & \ddots & \vdots\\
+        0 & \cdots & 0 & \mu_{n-1} & 2 & \lambda_{n-1}\\
+        0 & \cdots & 0 & 0 & \mu_{n} & 2 
+    \end{pmatrix}
+    \begin{pmatrix}
+        M_0 \\ M_1 \\ M_2 \\ \vdots \\ M_{n-1} \\ M_{n}
+    \end{pmatrix}
+    =
+    \begin{pmatrix}
+        d_0 \\ d_1 \\ d_2 \\ \vdots \\ d_{n-1} \\ d_{n}
+    \end{pmatrix}
+    \]
+\end{frame}
