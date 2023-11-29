@@ -1,0 +1,21 @@
+\begin{frame}{\textit{Spline} natural}
+    Este es el sistema de ecuaciones asociado al cálculo
+    de un \textit{spline} natural.
+    \[
+    \begin{pmatrix}
+        2 & \lambda_1 & 0 & 0 & \cdots & 0\\
+        \mu_2 & 2 & \lambda_2 & 0 & \cdots & 0\\
+        0 & \mu_3 & 2 & \lambda_3 & \cdots & 0\\
+        \vdots & \ddots& \ddots & \ddots & \ddots & \vdots\\
+        0 & \cdots & 0 & \mu_{n-2} & 2 & \lambda_{n-2}\\
+        0 & \cdots & 0 & 0 & \mu_{n-1} & 2 
+    \end{pmatrix}
+    \begin{pmatrix}
+        M_1 \\ M_2 \\ M_3 \\ \vdots \\ M_{n-2} \\ M_{n-1}
+    \end{pmatrix}
+    =
+    \begin{pmatrix}
+        d_1 \\ d_2 \\ d_3 \\ \vdots \\ d_{n-2} \\ d_{n-1}
+    \end{pmatrix}
+    \]
+\end{frame}
